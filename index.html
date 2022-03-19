@@ -5,28 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Paimblanc Cédric</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <title> Paimblanc Cédric</title>
 </head>
 
 <body>
     <div id="app">
-        <section>Informations Personnelles</section>
+        <header>
+            <h1> {{title}} </h1>
+        </header>
+        <section>
+            <h2> {{name}} {{firstname}} </h2>
+            <section>
+                <ul>
+                    <li v-for="info in personalInfo">
+                        {{info.text}}
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <h2>Langage</h2>
+        <ul>
+            <li v-for="item in competences.programLang">
+                {{item.lang}}
+            </li>
+        </ul>
+        <h2>Framework</h2>
+        <ul>
+            <li v-for="item in competences.frameworks">
+                {{item.framework}}
+            </li>
+        </ul>
+        <h2>Logiciel</h2>
+        <ul>
+            <li v-for="item in competences.softwares">
+                {{item.software}}
+            </li>
+        </ul>
+        <h2>Langue étrangère</h2>
+        <ul>
+            <li v-for="item in langs">
+                {{item.lang}}
+            </li>
+        </ul>
         <section>
             <h2>Compétences</h2>
-            <p>{{message}}</p>
+            <h3>Technique</h3>
+            <ul>
+                <li v-for="competence in competences.technical">
+                    {{competence.text}}
+                </li>
+            </ul>
+            <h3>Personnelles</h3>
+            <ul>
+                <li v-for="competence in competences.personal">
+                    {{competence.text}}
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formations</h2>
+            <table>
+                <tr v-for="stage in stages">
+
+                    <td>
+                        {{stage.year}}
+                    </td>
+                    <td>
+                        {{stage.title}}
+                    </td>
+                    <td>
+                        {{stage.location}}
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2> Expérience Professionnel</h2>
+            <table>
+                <tr v-for="job in jobs">
+
+                    <td>
+                        {{job.date}}
+                    </td>
+                    <td>
+                        {{job.postTitle}}
+                    </td>
+                    <td>
+                        {{job.company}}
+                    </td>
+                    <td>
+                        {{job.location}}
+                    </td>
+                </tr>
+            </table>
         </section>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
->
-<script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue !'
-        }
-    })
-</script>
+<script src="assets/main.js"></script>
+
 
 </html>
