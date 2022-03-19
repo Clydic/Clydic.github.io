@@ -4,13 +4,16 @@ var app = new Vue({
         title: "Développeur Web et Web mobile",
         name: "Paimblanc",
         firstname: "Cédric",
+        langs: [
+            { lang: "Anglais", lvl: "Intermédiaire" },
+            { lang: "Espagnole", lvl: "Débutant" },
+        ],
         personalInfo: [
 
             { text: "28 Octobre 1991 (30ans)" },
             { text: "cedric.p14@free.fr" },
             { text: "www.linkedin.com/in/cédric-paimblanc-17465018" },
             { text: "Voiture + permis B" },
-            { text: "0626577421" },
             { text: "Français" }
         ],
         competences: {
@@ -43,10 +46,46 @@ var app = new Vue({
                 { lang: "Git" }
             ],
 
-            framework: [
+            frameworks: [
+                { framework: "Bootstrap" },
+                { framework: "Jquery" },
+                { framework: "Symfony" },
+                { framework: "Vuejs" },
 
+            ],
+            softwares: [
+
+                { software: "Visual Studio Code" },
+                { software: "JMerise" },
+                { software: "Trello" },
+                { software: "PHP-MyAdmin" },
+                { software: "Vim" },
+                { software: "Android Studio" },
+                { software: "Github" },
+                { software: "" },
             ]
-        }
+        },
+        stage: [{
+                year: "2021-2022",
+                title: "Titre Profesionnel",
+                location: "AFPA de Ifs(14)"
+            },
+            {
+                year: "2016-2017",
+                title: "M1 MEEF 2nd degré de Mathématiques",
+                location: "ESPE de Caen"
+            },
+            {
+                year: "2015-2016",
+                title: "M1 MEEF 2nd degré de Mathématiques",
+                location: "ESPE de Caen"
+            },
+            {
+                year: "",
+                title: "Licence de Mathématiques",
+                location: "Université de Caen (14)"
+            },
+        ]
 
 
 
