@@ -14,7 +14,7 @@ var app = new Vue({
             { text: "cedric.p14@free.fr" },
             { text: "www.linkedin.com/in/cédric-paimblanc-17465018" },
             { text: "Voiture + permis B" },
-            { text: "Français" }
+            //{ text: "Français" }
         ],
         competences: {
 
@@ -62,10 +62,9 @@ var app = new Vue({
                 { software: "Vim" },
                 { software: "Android Studio" },
                 { software: "Github" },
-                { software: "" },
             ]
         },
-        stage: [{
+        stages: [{
                 year: "2021-2022",
                 title: "Titre Profesionnel",
                 location: "AFPA de Ifs(14)"
@@ -81,11 +80,26 @@ var app = new Vue({
                 location: "ESPE de Caen"
             },
             {
-                year: "",
+                year: "2015-2016",
                 title: "Licence de Mathématiques",
                 location: "Université de Caen (14)"
             },
-        ]
+        ],
+        jobs: [
+
+            {
+                postTitle: "Développeur stagiaire",
+                date: "12/2021-02/2022 (9 semaines)",
+                location: "Louvigny(14)",
+                company: "Agence 88"
+            },
+            {
+                postTitle: "Équipier polyvalent",
+                date: "2010-2020",
+                location: "Pontorson(50),Ifs(14)",
+                company: "McDonald's"
+            },
+        ],
 
 
 
