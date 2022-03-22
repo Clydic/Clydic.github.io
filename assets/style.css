@@ -1,0 +1,15 @@
+#app {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#competences {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:810px) {
+    #competences {
+        flex-direction: row;
+    }
+}
