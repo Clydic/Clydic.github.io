@@ -6,7 +6,7 @@ var app = new Vue({
         firstname: "Cédric",
         langs: [
             { lang: "Anglais", lvl: "Intermédiaire" },
-            { lang: "Espagnole", lvl: "Débutant" },
+            { lang: "Espagnol", lvl: "Débutant" },
         ],
         personalInfo: [
 
@@ -36,10 +36,10 @@ var app = new Vue({
             ],
             programLang: [
                 { lang: "Html5" },
-                { lang: "CSS3" },
-                { lang: "Javascript" },
+                { lang: "CSS3 (Bootstrap)" },
+                { lang: "Javascript (VueJs)" },
                 { lang: "Java" },
-                { lang: "PHP" },
+                { lang: "PHP (Symfony)" },
                 { lang: "Python" },
                 { lang: "SQL" },
                 { lang: "Latex" },
@@ -66,7 +66,7 @@ var app = new Vue({
         },
         stages: [{
                 year: "2021-2022",
-                title: "Titre Profesionnel",
+                title: "Titre Professionnel",
                 location: "AFPA de Ifs(14)"
             },
             {

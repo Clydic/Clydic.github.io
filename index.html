@@ -24,24 +24,6 @@
                 </ul>
             </section>
         </section>
-        <h2>Langage</h2>
-        <ul>
-            <li v-for="item in competences.programLang">
-                {{item.lang}}
-            </li>
-        </ul>
-        <h2>Framework</h2>
-        <ul>
-            <li v-for="item in competences.frameworks">
-                {{item.framework}}
-            </li>
-        </ul>
-        <h2>Logiciel</h2>
-        <ul>
-            <li v-for="item in competences.softwares">
-                {{item.software}}
-            </li>
-        </ul>
         <h2>Langue étrangère</h2>
         <ul>
             <li v-for="item in langs">
@@ -56,6 +38,31 @@
                     {{competence.text}}
                 </li>
             </ul>
+            <div id="competences">
+                <div>
+                    <h3>Langage</h3>
+                    <ul>
+                        <li v-for="item in competences.programLang">
+                            {{item.lang}}
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- <h3>Framework</h3>
+                <ul>
+                    <li v-for="item in competences.frameworks">
+                        {{item.framework}}
+                    </li>
+                </ul></div>
+                <div> -->
+                    <h3>Logiciel</h3>
+                    <ul>
+                        <li v-for="item in competences.softwares">
+                            {{item.software}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <h3>Personnelles</h3>
             <ul>
                 <li v-for="competence in competences.personal">
