@@ -14,100 +14,106 @@
         <header>
             <h1> {{title}} </h1>
         </header>
-        <section>
-            <h2> {{name}} {{firstname}} </h2>
+        <main>
+
             <section>
-                <ul>
-                    <li v-for="info in personalInfo">
-                        {{info.text}}
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <h2>Langue étrangère</h2>
-        <ul>
-            <li v-for="item in langs">
-                {{item.lang}}
-            </li>
-        </ul>
-        <section>
-            <h2>Compétences</h2>
-            <h3>Technique</h3>
-            <ul>
-                <li v-for="competence in competences.technical">
-                    {{competence.text}}
-                </li>
-            </ul>
-            <div id="competences">
                 <div>
-                    <h3>Langage</h3>
+                    <h2> {{name}} {{firstname}} </h2>
+                    <div>
+                        <ul>
+                            <li v-for="info in personalInfo">
+                                {{info.text}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2>Langue étrangère</h2>
                     <ul>
-                        <li v-for="item in competences.programLang">
+                        <li v-for="item in langs">
                             {{item.lang}}
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <!-- <h3>Framework</h3>
+            </section>
+            <section>
+                <h2>Compétences</h2>
+                <h3>Technique</h3>
+                <ul>
+                    <li v-for="competence in competences.technical">
+                        {{competence.text}}
+                    </li>
+                </ul>
+                <div id="competences">
+                    <div>
+                        <h3>Langage</h3>
+                        <ul>
+                            <li v-for="item in competences.programLang">
+                                {{item.lang}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- <h3>Framework</h3>
                 <ul>
                     <li v-for="item in competences.frameworks">
                         {{item.framework}}
                     </li>
                 </ul></div>
                 <div> -->
-                    <h3>Logiciel</h3>
-                    <ul>
-                        <li v-for="item in competences.softwares">
-                            {{item.software}}
-                        </li>
-                    </ul>
+                        <h3>Logiciel</h3>
+                        <ul>
+                            <li v-for="item in competences.softwares">
+                                {{item.software}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <h3>Personnelles</h3>
-            <ul>
-                <li v-for="competence in competences.personal">
-                    {{competence.text}}
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Formations</h2>
-            <table>
-                <tr v-for="stage in stages">
+                <h3>Personnelles</h3>
+                <ul>
+                    <li v-for="competence in competences.personal">
+                        {{competence.text}}
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Formations</h2>
+                <table>
+                    <tr v-for="stage in stages">
 
-                    <td>
-                        {{stage.year}}
-                    </td>
-                    <td>
-                        {{stage.title}}
-                    </td>
-                    <td>
-                        {{stage.location}}
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h2> Expérience Professionnel</h2>
-            <table>
-                <tr v-for="job in jobs">
+                        <td>
+                            {{stage.year}}
+                        </td>
+                        <td>
+                            {{stage.title}}
+                        </td>
+                        <td>
+                            {{stage.location}}
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2> Expérience Professionnel</h2>
+                <table>
+                    <tr v-for="job in jobs">
 
-                    <td>
-                        {{job.date}}
-                    </td>
-                    <td>
-                        {{job.postTitle}}
-                    </td>
-                    <td>
-                        {{job.company}}
-                    </td>
-                    <td>
-                        {{job.location}}
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </div>
+                        <td>
+                            {{job.date}}
+                        </td>
+                        <td>
+                            {{job.postTitle}}
+                        </td>
+                        <td>
+                            {{job.company}}
+                        </td>
+                        <td>
+                            {{job.location}}
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="assets/main.js"></script>

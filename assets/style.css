@@ -1,6 +1,5 @@
 #app {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin: 5%;
 }
 
 #competences {
@@ -11,5 +10,11 @@
 @media screen and (min-width:810px) {
     #competences {
         flex-direction: row;
+    }
+    header {
+        display: flex;
+    }
+    header h1 {
+        margin: auto;
     }
 }
